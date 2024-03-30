@@ -11,15 +11,15 @@ const Navbar = () => { //the Navbar the house the heading and tabs for other pag
             <Flex bg="#7bd1f3" justifyContent="space-between" p='0 2px' width="85rem" height='70px' borderRadius='4px'>
             {/* Heading */}
             <Center>
-                <Heading fontSize='30px' p="5px" bgGradient='linear(to-l, #BEE3F8, #63B3ED' >Edwin Pena Holguin</Heading>
+                <Heading fontSize='30px' p="5px" bgGradient='linear(to-l, #BEE3F8, #63B3ED' fontFamily={['Nono Serif', 'serif']} >Edwin Pena Holguin</Heading>
             </Center>
             {/* Tabs to other parts of the page */}
             <Center>
         <Tabs>
             <TabList>
-                <Tab><ChakraLink as={ReactRouterLink} to='/'>About Me</ChakraLink></Tab>
-                <Tab><ChakraLink as={ReactRouterLink} to='/Project'>Projects</ChakraLink></Tab>
-                <Tab><ChakraLink as={ReactRouterLink} to='/Resume'>Resume</ChakraLink></Tab>
+                <ChakraLink as={ReactRouterLink} to='/'><Tab>About Me</Tab></ChakraLink>
+                <ChakraLink as={ReactRouterLink} to='/Project'><Tab>Projects</Tab></ChakraLink>
+                <ChakraLink as={ReactRouterLink} to='/Resume'><Tab>Resume</Tab></ChakraLink>
             </TabList>
         </Tabs>
         </Center>
